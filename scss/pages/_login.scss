@@ -1,0 +1,63 @@
+    body {
+        background-image: url(../img/gaming.jpeg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    
+    .wrapper {
+        height: 100vh;
+        margin: 0;
+        overflow: hidden;
+    }
+    
+    .headings {
+        width: 40%;
+        position: absolute;
+        bottom: 5em;
+        padding-left: 40px;
+        z-index: 3;
+    }
+    
+    .background_section {
+        background-color: $login_purple;
+        opacity: 60%;
+    }
+    
+    .log_in_section {
+        width: 500px;
+    }
+    
+    .logo {
+        overflow: hidden;
+        padding-top: 4em;
+        height: auto;
+        img {
+            height: 5em;
+        }
+        h1 {
+            font-size: 3em;
+            color: $login_purple;
+        }
+    }
+    
+    .email,
+    .psw {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 75%;
+        height: 3.5em;
+        border-radius: 1.625rem;
+        border: 0;
+    }
+    
+    input[type=text],
+    input[type=password] {
+        padding-left: 30px;
+    }
+    
+    input:focus,
+    button:focus {
+        outline-width: 0;
+    }

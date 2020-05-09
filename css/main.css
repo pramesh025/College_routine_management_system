@@ -10,12 +10,14 @@ body {
 
 .wrapper {
   height: 100vh;
+  margin: 0;
+  overflow: hidden;
 }
 
 .headings {
-  display: block;
+  width: 40%;
   position: absolute;
-  top: 5em;
+  bottom: 5em;
   padding-left: 40px;
   z-index: 3;
 }
@@ -27,5 +29,41 @@ body {
 
 .log_in_section {
   width: 500px;
+}
+
+.logo {
+  overflow: hidden;
+  padding-top: 4em;
+  height: auto;
+}
+
+.logo img {
+  height: 5em;
+}
+
+.logo h1 {
+  font-size: 3em;
+  color: #4E007A;
+}
+
+.email,
+.psw {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+  height: 3.5em;
+  border-radius: 1.625rem;
+  border: 0;
+}
+
+input[type=text],
+input[type=password] {
+  padding-left: 30px;
+}
+
+input:focus,
+button:focus {
+  outline-width: 0;
 }
 /*# sourceMappingURL=main.css.map */

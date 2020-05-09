@@ -15,30 +15,34 @@
 <body>
     <div class="container-fluid wrapper">
         <div class="row h-100">
-            <!-- <div class="headings">
+            <div class="headings text-white d-none d-lg-block">
                 <h1>HEADINGS</h1>
                 <span>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus aliquid ea et sit velit voluptatem deleniti nam? Sed commodi, soluta quisquam, beatae officiis provident nobis porro aspernatur iure animi mollitia.
                 </span>
-            </div> -->
+            </div>
             <div class="background_section d-md-block d-none col">
             </div>
-            <div class="log_in_section col bg-white">
-                <div class="logo">
-                    <img src="..\img\logo.svg" alt="logo">
-                    <h1>Sign In</h1>
+            <div class="log_in_section row-cols-1 h-auto bg-white">
+                <div class="logo col-auto">
+                    <img src="..\img\logo.svg" alt="logo" class="mx-auto d-block">
+                    <h1 class="text-center mt-5">Sign In</h1>
                 </div>
-                <div class="input_section">
-                    <input type="text" class="email" placeholder="Email" name="email" required>
-                    <input type="password" class="psw" placeholder="Password" name="psw" required>
+                <div class="input_section col h-25 mt-5">
+                    <input type="text" class="email mb-3 shadow" placeholder="Email" name="email" required>
+                    <input type="password" class="psw shadow" placeholder="Password" name="psw" required>
                 </div>
-                <div class="button_section">
-                    <label class="remember_me">
-                    <input type="checkbox" checked="checked" name="remember"> Remember me
-                </label>
-                    <span class="forgot_psw"><a href="#">Forgot Password?</a></span>
-                    <span class="sign_up"> First time here?<a href="#">Sign up.</a></span>
-                    <button type="submit">Login</button>
+                <div class="button_section col h-25">
+                    <section class="row">
+                        <label class="remember_me ml-5">
+                            <input type="checkbox" checked="checked" name="remember"> Remember me
+                        </label>
+                        <span class="forgot_psw"><a href="#">Forgot Password?</a></span>
+                    </section>
+                    <section class="row">
+                        <span class="sign_up"> First time here?<a href="#">Sign up.</a></span>
+                        <button type="submit">Login</button>
+                    </section>
                 </div>
             </div>
         </div>
