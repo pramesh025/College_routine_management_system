@@ -1,0 +1,27 @@
+body {
+    background-image: url(../img/gaming.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.wrapper {
+    height: 100vh;
+}
+
+.headings {
+    display: block;
+    position: absolute;
+    top: 5em;
+    padding-left: 40px;
+    z-index: 3;
+}
+
+.background_section {
+    background-color: $login_purple;
+    opacity: 60%;
+}
+
+.log_in_section {
+    width: 500px;
+}
