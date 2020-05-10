@@ -6,11 +6,13 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  height: 100vh;
 }
 
 .wrapper {
-  height: 100vh;
+  height: 100%;
   margin: 0;
+  overflow: hidden;
 }
 
 .headings {
@@ -24,25 +26,26 @@ body {
 .background_section {
   background-color: #4E007A;
   opacity: 60%;
-  height: 100%;
-  min-height: 578px;
 }
 
 .log_in_section {
   position: relative;
   width: 500px;
-  height: 100%;
   min-height: 578px;
+}
+
+.logo {
   overflow: hidden;
-}
-
-.log_in_section img {
   padding-top: 4em;
+  height: 35%;
   min-width: 373px;
 }
 
-.log_in_section h1 {
-  min-width: 373px;
+.logo img {
+  height: 40%;
+}
+
+.logo h1 {
   font-size: 330%;
   color: #4E007A;
 }
@@ -69,18 +72,24 @@ button:focus {
   outline-width: 0;
 }
 
-.remember_me {
+.button_section {
+  min-width: 373px;
   font-size: 0.85em;
 }
 
-.sign_up {
-  font-size: 0.85em;
+.button_section .remember_me {
+  margin-left: 15%;
 }
 
-.login_botton {
-  font-size: 1em;
+.button_section .sign_up {
+  margin-left: 15%;
+}
+
+.button_section button {
   position: relative;
-  height: 3em;
+  width: 10em;
+  height: 3.25em;
+  padding: 3px;
   border-radius: 1.625rem;
   border: 0;
   cursor: pointer;
@@ -88,25 +97,16 @@ button:focus {
   color: white;
 }
 
-.login_botton:hover {
+.button_section button:hover {
   opacity: 80%;
 }
 
-@media only screen and (max-width: 438px) {
-  .remember_me {
-    padding-left: 0 !important;
-    margin-left: 15% !important;
+@media only screen and (max-width: 373px) {
+  .button_section .remember_me {
+    margin-left: 5px;
   }
-  .forgot_psw {
-    padding-right: 0 !important;
-    margin-right: 0 !important;
-  }
-  .login_botton {
-    margin-top: 5% !important;
-  }
-  .sign_up {
-    color: white;
-    margin-top: 25% !important;
+  .button_section .sign_up {
+    margin-left: 5px;
   }
 }
 
@@ -119,10 +119,7 @@ button:focus {
   }
 }
 
-@media only screen and (max-width: 553px) {
-  .background_section {
-    display: none;
-  }
+@media only screen and (max-width: 522px) {
   .log_in_section {
     width: 100%;
   }
