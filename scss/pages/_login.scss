@@ -3,13 +3,11 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 100vh;
 }
 
 .wrapper {
-    height: 100%;
+    height: 100vh;
     margin: 0;
-    overflow: hidden;
 }
 
 .headings {
@@ -23,23 +21,22 @@ body {
 .background_section {
     background-color: $login_purple;
     opacity: 60%;
+    height: 100%;
+    min-height: 578px;
 }
 
 .log_in_section {
     position: relative;
     width: 500px;
+    height: 100%;
     min-height: 578px;
-}
-
-.logo {
     overflow: hidden;
-    padding-top: 4em;
-    height: 35%;
-    min-width: 373px;
     img {
-        height: 40%;
+        padding-top: 4em;
+        min-width: 373px;
     }
     h1 {
+        min-width: 373px;
         font-size: 330%;
         color: $login_purple;
     }
@@ -67,39 +64,43 @@ button:focus {
     outline-width: 0;
 }
 
-.button_section {
-    min-width: 373px;
+.remember_me {
     font-size: 0.85em;
-    .remember_me {
-        margin-left: 15%;
-    }
-    .sign_up {
-        margin-left: 15%;
-    }
-    button {
-        position: relative;
-        width: 10em;
-        height: 3.25em;
-        padding: 3px;
-        border-radius: 1.625rem;
-        border: 0;
-        cursor: pointer;
-        background-image: linear-gradient(45deg, #630080, #C500FF);
-        color: white;
-    }
-    button:hover {
+}
+
+.sign_up {
+    font-size: 0.85em;
+}
+
+.login_botton {
+    font-size: 1em;
+    position: relative;
+    height: 3em;
+    border-radius: 1.625rem;
+    border: 0;
+    cursor: pointer;
+    background-image: linear-gradient(45deg, #630080, #C500FF);
+    color: white;
+    &:hover {
         opacity: 80%;
     }
 }
 
-@media only screen and (max-width: 373px) {
-    .button_section {
-        .remember_me {
-            margin-left: 5px;
-        }
-        .sign_up {
-            margin-left: 5px;
-        }
+@media only screen and (max-width: 438px) {
+    .remember_me {
+        padding-left: 0 !important;
+        margin-left: 15% !important;
+    }
+    .forgot_psw {
+        padding-right: 0 !important;
+        margin-right: 0 !important;
+    }
+    .login_botton {
+        margin-top: 5% !important;
+    }
+    .sign_up {
+        color: white;
+        margin-top: 25% !important;
     }
 }
 
@@ -112,8 +113,11 @@ button:focus {
     }
 }
 
-@media only screen and (max-width: 522px) {
+@media only screen and (max-width: 553px) {
+    .background_section {
+        display: none;
+    }
     .log_in_section {
-        width: 100%
+        width: 100%;
     }
 }
