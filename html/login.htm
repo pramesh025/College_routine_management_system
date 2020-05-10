@@ -21,25 +21,29 @@
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus aliquid ea et sit velit voluptatem deleniti nam? Sed commodi, soluta quisquam, beatae officiis provident nobis porro aspernatur iure animi mollitia.
                 </span>
             </div>
-            <div class="background_section col">
+            <div class="background_section d-md-block d-none col">
             </div>
-            <div class="log_in_section row-cols-1 bg-white">
-                <img src="..\img\logo.svg" alt="logo" class="logo col mx-auto d-block h-25">
-                <h1 class="col text-center mt-5">Sign In</h1>
-                <div class="input_section col mt-5">
+            <div class="log_in_section row-cols-1 h-auto bg-white">
+                <div class="logo col-auto">
+                    <img src="..\img\logo.svg" alt="logo" class="mx-auto d-block">
+                    <h1 class="text-center mt-5">Sign In</h1>
+                </div>
+                <div class="input_section col h-25 mt-5">
                     <input type="text" class="email mb-3 shadow" placeholder="Email" name="email" required>
                     <input type="password" class="psw shadow" placeholder="Password" name="psw" required>
                 </div>
-                <section class="row mt-4">
-                    <label class="remember_me col pl-5 ml-5">
-                    <input type="checkbox" checked="checked" name="remember"> Remember me
-                    </label>
-                    <p class="forgot_psw col text-right mr-5"><a href="#">Forgot Password?</a></p>
-                </section>
-                <section class="row justify-content-center m-0">
-                    <button type="submit" class="col-6 login_botton shadow-sm">Login</button>
-                </section>
-                <p class="sign_up col pl-5 ml-3 mt-5"> First time here?<a href="#">Sign up.</a></p>
+                <div class="button_section col h-25">
+                    <section class="row">
+                        <label class="remember_me ml-5">
+                            <input type="checkbox" checked="checked" name="remember"> Remember me
+                        </label>
+                        <span class="forgot_psw"><a href="#">Forgot Password?</a></span>
+                    </section>
+                    <section class="row">
+                        <span class="sign_up"> First time here?<a href="#">Sign up.</a></span>
+                        <button type="submit">Login</button>
+                    </section>
+                </div>
             </div>
         </div>
     </div>

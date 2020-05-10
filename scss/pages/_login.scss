@@ -1,123 +1,63 @@
-body {
-    background-image: url(../img/gaming.jpeg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-
-.wrapper {
-    height: 100vh;
-    margin: 0;
-}
-
-.headings {
-    width: 40%;
-    position: absolute;
-    bottom: 5em;
-    padding-left: 40px;
-    z-index: 3;
-}
-
-.background_section {
-    background-color: $login_purple;
-    opacity: 60%;
-    height: 100%;
-    min-height: 578px;
-}
-
-.log_in_section {
-    position: relative;
-    width: 500px;
-    height: 100%;
-    min-height: 578px;
-    overflow: hidden;
-    img {
-        padding-top: 4em;
-        min-width: 373px;
-    }
-    h1 {
-        min-width: 373px;
-        font-size: 330%;
-        color: $login_purple;
-    }
-}
-
-.email,
-.psw {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 75%;
-    min-width: 320px;
-    height: 3.5em;
-    border-radius: 1.625rem;
-    border: 0;
-}
-
-input[type=text],
-input[type=password] {
-    padding-left: 30px;
-}
-
-input:focus,
-button:focus {
-    outline-width: 0;
-}
-
-.remember_me {
-    font-size: 0.85em;
-}
-
-.sign_up {
-    font-size: 0.85em;
-}
-
-.login_botton {
-    font-size: 1em;
-    position: relative;
-    height: 3em;
-    border-radius: 1.625rem;
-    border: 0;
-    cursor: pointer;
-    background-image: linear-gradient(45deg, #630080, #C500FF);
-    color: white;
-    &:hover {
-        opacity: 80%;
-    }
-}
-
-@media only screen and (max-width: 438px) {
-    .remember_me {
-        padding-left: 0 !important;
-        margin-left: 15% !important;
-    }
-    .forgot_psw {
-        padding-right: 0 !important;
-        margin-right: 0 !important;
-    }
-    .login_botton {
-        margin-top: 5% !important;
-    }
-    .sign_up {
-        color: white;
-        margin-top: 25% !important;
-    }
-}
-
-@media only screen and (max-width: 500px) {
-    .log_in_section {
-        background-color: none;
-        background-image: url(../img/bg.svg);
+    body {
+        background-image: url(../img/gaming.jpeg);
         background-repeat: no-repeat;
         background-size: cover;
+        background-position: center;
     }
-}
-
-@media only screen and (max-width: 553px) {
+    
+    .wrapper {
+        height: 100vh;
+        margin: 0;
+        overflow: hidden;
+    }
+    
+    .headings {
+        width: 40%;
+        position: absolute;
+        bottom: 5em;
+        padding-left: 40px;
+        z-index: 3;
+    }
+    
     .background_section {
-        display: none;
+        background-color: $login_purple;
+        opacity: 60%;
     }
+    
     .log_in_section {
-        width: 100%;
+        width: 500px;
     }
-}
+    
+    .logo {
+        overflow: hidden;
+        padding-top: 4em;
+        height: auto;
+        img {
+            height: 5em;
+        }
+        h1 {
+            font-size: 3em;
+            color: $login_purple;
+        }
+    }
+    
+    .email,
+    .psw {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 75%;
+        height: 3.5em;
+        border-radius: 1.625rem;
+        border: 0;
+    }
+    
+    input[type=text],
+    input[type=password] {
+        padding-left: 30px;
+    }
+    
+    input:focus,
+    button:focus {
+        outline-width: 0;
+    }
